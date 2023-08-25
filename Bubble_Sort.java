@@ -30,6 +30,12 @@ public class Bubble_Sort {
         }
         sort(arr,n);
 
-        System.out.println("\nSorted elements are: "+Arrays.toString(arr));
+        //System.out.println("\nSorted elements are: "+Arrays.toString(arr)); this is also a way to sorted element print
+
+        // this is also a way to sort the elements...
+        System.out.print("\nSorted elements are: ");
+        for (int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
     }
 }

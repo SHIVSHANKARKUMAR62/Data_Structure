@@ -13,13 +13,15 @@ public class stack_Using_Queue {
 
     // Inserting the data in the stack
     public void Insert(int data){
-        // move the data from queue1 to queue2
+        //1. move the data from queue1 to queue2
         while (!queue1.isEmpty()){
             queue2.add(queue1.peek()); // put the 1st element in queue2
             queue1.poll(); // this is used to remove the elements
         }
+
+        // 2. push the data in queue1
         queue1.add(data);
-        // move the data from queue2 to queue1
+        //3. move the data from queue2 to queue1
         while (!queue2.isEmpty()){
             queue1.add(queue2.peek());  // put the 1st element in queue1
             queue2.poll(); // this is used to remove the elements
